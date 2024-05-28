@@ -7,20 +7,29 @@
     <title>Form</title>
   </head>
   <body>
-    <form class="form" action="">
-      <h1>Регистрация</h1>
-      <p>Уже есть аккаунт <a href="">Войти</a></p>
-      <input type="text" value="Моя компания" name="company" required />
-      <input type="text" placeholder="Имя" name="name" required />
-      <input type="text" placeholder="Фамлия" name="sername" required />
-      <input type="email" placeholder="E-mail" name="email" required />
-      <button>Зарегистрироваться</button>
-      <div>
-        <input type="checkbox" id="chek" name="chek" required />
-        <label for="chek"
-          >Я прочитал и принимаю <a href="">условия использования</a></label
-        >
-      </div>
-    </form>
+    <div class="container">
+      <form class="form" action="">
+        <h1>Регистрация</h1>
+        <p>Уже есть аккаунт <a href="">Войти</a></p>
+        <div class="inputs">
+          <input type="text" value="Моя компания" name="company" required />
+
+          <div class="fio">
+            <input type="text" placeholder="Имя" name="name" required />
+            <input type="text" placeholder="Фамлия" name="sername" required />
+          </div>
+
+          <input type="email" placeholder="E-mail" name="email" required />
+
+          <button>Зарегистрироваться</button>
+          <div class="chek">
+            <input type="checkbox" id="chek" name="chek" required />
+            <label class="label" for="chek"
+              >Я прочитал и принимаю <a href="">условия использования</a></label
+            >
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

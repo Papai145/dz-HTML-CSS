@@ -11,6 +11,70 @@
 
 body {
     background-color: #374151;
+    padding: 0px 181px 0px 180px;
+    box-sizing: border-box;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ---------------------------flex---------------------------------- */
+.sait {
+    width: 1080px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    margin-top: 71px;
+    display: flex;
+
+}
+
+.logo-blog {
+    align-self: center;
+    flex-shrink: 0;
+
+}
+
+nav {
+    flex-basis: 730px;
+    align-self: center;
+}
+
+ul {
+    display: flex;
+
+}
+
+ul li:nth-child(1) {
+    flex-basis: 165px;
+    text-align: end;
+
+}
+
+ul li:nth-child(2) {
+    flex-basis: 119px;
+    text-align: end;
+}
+
+ul li:nth-child(3) {
+    flex-basis: 101px;
+    text-align: end;
+}
+
+input {
+    flex-basis: 224px;
+    height: 40px;
+}
+
+/* ---------------------------flex---------------------------------- */
+main {
+    margin-top: 69px;
 }
 
 a {
@@ -80,9 +144,29 @@ h1 {
 
 .autor {
     margin-bottom: 28px;
+
+    display: flex;
+    justify-content: center;
+    /* width: 214px; */
+    /* justify-content: center; */
+    height: 53px;
 }
 
-.autor :nth-child(2) {
+img[alt="face"] {
+    flex-basis: 50px;
+    height: 50px;
+    /* margin-left: 16px; */
+}
+
+.autor div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 16px;
+
+}
+
+.autor :nth-child(1) {
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 400;
@@ -90,7 +174,7 @@ h1 {
     color: #FFFFFF;
 }
 
-.autor :nth-child(3) {
+.autor div p:nth-child(2) {
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
@@ -99,10 +183,18 @@ h1 {
     opacity: 60%;
 }
 
+main {}
+
 .blog {
     font-family: "Roboto";
     font-weight: 400;
     color: #FFFFFF;
+    width: 708px;
+    /* align-self: center; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+
 }
 
 img[alt="Mac"] {
@@ -116,11 +208,13 @@ img[alt="Mac"] {
 .blog p:nth-child(1) {
     font-size: 20px;
     line-height: 32px;
+
 }
 
 .blog p:not(:nth-child(1)) {
     font-size: 16px;
     line-height: 30px;
+    margin-top: 39px;
 }
 
 footer {

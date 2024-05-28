@@ -6,27 +6,54 @@
 
 * {
     font-family: "Open Sans";
+    box-sizing: border-box;
+    margin: 0px;
+
 }
 
 body {
-    background-color: #F39494;
+    background: linear-gradient(0deg, #F39494, #F39494),
+        linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%),
+        linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%);
+
+}
+
+.container {
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: center;
+
 }
 
 form {
     background-color: #FFFEFE;
 }
 
-h1 {
+form {
+    width: 582px;
+    height: 582px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+h1 {
+    padding-top: 72px;
     font-size: 36px;
     font-weight: 700;
     line-height: 49.03px;
-    text-align: center;
     color: #333333;
 }
 
 p {
-
+    text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.51px;
@@ -38,14 +65,57 @@ a {
     text-decoration: none;
 }
 
-input {
+/* flex */
+.inputs {
+    margin-top: 47px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 394px;
 
+}
+
+.fio {
+    display: flex;
+    column-gap: 0px;
+}
+
+.fio input {
+    flex: 1 1 100%;
+}
+
+
+button {
+    width: 100%;
+}
+
+.chek {
+    height: 19px;
+    display: flex;
+}
+
+input[id="chek"] {
+
+    align-self: center;
+}
+
+
+
+/* flex */
+input {
+    height: 44px;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
     line-height: 21.79px;
     color: #999999;
     background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+}
+
+input[name="name"] {
+    border-right: 1px solid #FFFFFF;
 }
 
 input[name='company'] {
@@ -55,16 +125,20 @@ input[name='company'] {
     line-height: 21.79px;
     color: #333333;
     background-color: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
 }
 
 button {
     background-color: #089FE0;
-
+    height: 44px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.51px;
     text-align: center;
     color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
 }
 
 label {
