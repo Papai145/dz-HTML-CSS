@@ -11,37 +11,34 @@
 
 }
 
-body {
+html {
     background: linear-gradient(0deg, #F39494, #F39494),
         linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%),
         linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%);
 
+    width: 100%;
+    height: 100%;
+    margin: 0
 }
 
-.container {
-    /* position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
-    display: flex;
-    justify-content: center;
 
-}
-
-form {
-    background-color: #FFFEFE;
-}
 
 form {
     width: 582px;
     height: 582px;
+    background-color: #FFFEFE;
     border-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 h1 {
@@ -58,6 +55,11 @@ p {
     font-weight: 400;
     line-height: 24.51px;
     color: #666666;
+
+}
+
+p a {
+    margin-left: 6px;
 }
 
 a {
@@ -72,7 +74,6 @@ a {
     flex-direction: column;
     gap: 20px;
     width: 394px;
-
 }
 
 .fio {
@@ -87,19 +88,16 @@ a {
 
 button {
     width: 100%;
-}
-
-.chek {
-    height: 19px;
     display: flex;
+    gap: 56px;
+    padding: 9px 24px 9px 102px;
+    align-items: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    /* line-height: 24.51px;
+    text-align: center; */
 }
-
-input[id="chek"] {
-
-    align-self: center;
-}
-
-
 
 /* flex */
 input {
@@ -112,21 +110,23 @@ input {
     background-color: #F5F5F5;
     border: 1px solid #F5F5F5;
     border-radius: 5px;
+    padding-left: 11px;
 }
 
-input[name="name"] {
-    border-right: 1px solid #FFFFFF;
-}
-
-input[name='company'] {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 21.79px;
-    color: #333333;
+input:focus {
     background-color: #FFFFFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    font-style: normal;
+    caret-color: #089FE0;
+    outline: none;
     border: 1px solid #F5F5F5;
-    border-radius: 5px;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 button {
@@ -139,20 +139,4 @@ button {
     color: #FFFFFF;
     border: 3px solid #FFFFFF;
     border-radius: 5px;
-}
-
-label {
-
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19.07px;
-    color: #666666;
-}
-
-label a {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19.07px;
-
-
 }

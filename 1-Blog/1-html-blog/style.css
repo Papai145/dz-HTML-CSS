@@ -30,42 +30,45 @@ body {
 }
 
 header {
-    margin-top: 71px;
+    padding: 71px 0 69px;
+    margin: 0 auto;
+    max-width: 1080px;
     display: flex;
-
+    gap: 77px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo-blog {
+/* .logo-blog {
     align-self: center;
     flex-shrink: 0;
 
+} */
+
+.my-blog {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    white-space: nowrap;
 }
 
+
+
 nav {
-    flex-basis: 730px;
+    flex: 1;
     align-self: center;
 }
 
 ul {
     display: flex;
-
+    align-items: center;
+    gap: 39px;
 }
 
-ul li:nth-child(1) {
-    flex-basis: 165px;
-    text-align: end;
-
+ul li:first-child {
+    margin-right: 13px;
 }
 
-ul li:nth-child(2) {
-    flex-basis: 119px;
-    text-align: end;
-}
-
-ul li:nth-child(3) {
-    flex-basis: 101px;
-    text-align: end;
-}
 
 input {
     flex-basis: 224px;
@@ -73,9 +76,7 @@ input {
 }
 
 /* ---------------------------flex---------------------------------- */
-main {
-    margin-top: 69px;
-}
+
 
 a {
     text-decoration: none;
@@ -100,6 +101,8 @@ input {
     line-height: 18.75px;
     color: #FFFFFF;
     padding-left: 49px;
+    flex-basis: 224px;
+    height: 40px;
 }
 
 input[type='text'] {
@@ -110,7 +113,7 @@ input[type='text'] {
 
 .logo {
     padding: 6px 12px;
-    margin: 0px 11px 0px 0px;
+    /* margin: 0px 11px 0px 0px; */
     border-radius: 3px;
     background-color: #4B5563;
     font-family: "Source Sans Pro";
@@ -144,26 +147,21 @@ h1 {
 
 .autor {
     margin-bottom: 28px;
-
     display: flex;
     justify-content: center;
-    /* width: 214px; */
-    /* justify-content: center; */
-    height: 53px;
+    gap: 16px;
+    align-items: center;
 }
 
 img[alt="face"] {
     flex-basis: 50px;
     height: 50px;
-    /* margin-left: 16px; */
 }
 
 .autor div {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-left: 16px;
-
 }
 
 .autor :nth-child(1) {
@@ -183,18 +181,22 @@ img[alt="face"] {
     opacity: 60%;
 }
 
-main {}
 
 .blog {
+
+    max-width: 708px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.blog p {
     font-family: "Roboto";
     font-weight: 400;
     color: #FFFFFF;
-    width: 708px;
-    /* align-self: center; */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-
+    font-size: 16px;
+    line-height: 30px;
 }
 
 img[alt="Mac"] {
@@ -209,12 +211,6 @@ img[alt="Mac"] {
     font-size: 20px;
     line-height: 32px;
 
-}
-
-.blog p:not(:nth-child(1)) {
-    font-size: 16px;
-    line-height: 30px;
-    margin-top: 39px;
 }
 
 footer {
