@@ -1,0 +1,38 @@
+.checkbox input[type=checkbox] {
+    display: none;
+}
+
+label a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    margin-left: 12px;
+
+}
+
+label {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    color: #666666;
+}
+
+label::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    background: #F5F5F5;
+    margin: 0px 4px 0px 0px;
+    align-self: center;
+
+}
+
+
+.checkbox input[type=checkbox]:checked+label::before {
+    align-content: center;
+    content: '\2713';
+}

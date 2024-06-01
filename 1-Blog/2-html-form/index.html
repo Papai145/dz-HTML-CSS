@@ -2,25 +2,40 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="component.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
   </head>
   <body>
+    <!-- <div class="container"> -->
     <form class="form" action="">
       <h1>Регистрация</h1>
       <p>Уже есть аккаунт <a href="">Войти</a></p>
-      <input type="text" value="Моя компания" name="company" required />
-      <input type="text" placeholder="Имя" name="name" required />
-      <input type="text" placeholder="Фамлия" name="sername" required />
-      <input type="email" placeholder="E-mail" name="email" required />
-      <button>Зарегистрироваться</button>
-      <div>
-        <input type="checkbox" id="chek" name="chek" required />
-        <label for="chek"
-          >Я прочитал и принимаю <a href="">условия использования</a></label
-        >
+      <div class="inputs">
+        <input
+          type="text"
+          placeholder="Название компания"
+          name="company"
+          required
+        />
+
+        <div class="fio">
+          <input type="text" placeholder="Имя" name="name" required />
+          <input type="text" placeholder="Фамлия" name="sername" required />
+        </div>
+
+        <input type="email" placeholder="E-mail" name="email" required />
+
+        <button>Зарегистрироваться <img src="Arrow 1.svg" alt="" /></button>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="chek" required />
+          <label for="chek"
+            >Я прочитал и принимаю <a href="#">Условия использования</a></label
+          >
+        </div>
       </div>
     </form>
+    <!-- </div> -->
   </body>
 </html>
